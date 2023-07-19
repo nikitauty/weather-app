@@ -1,0 +1,4 @@
+.eslintrc.cjs
+**/.vscode/*
+**/node_modules/*
+vite.config.ts

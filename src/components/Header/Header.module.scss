@@ -1,0 +1,38 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo{
+        display: flex;
+        align-items: center;
+    
+        .logo__text{
+            text-transform: uppercase;
+            font-size: 25px;
+            color: #4793FF;
+            font-weight: 700;
+
+            margin-left: 20px;
+        }
+    }
+
+    .themeCity{
+        display: flex;
+        align-items: center;
+
+        .theme{
+            border: 0;
+            background-color: #fff;
+        }
+
+        #city{
+            border-radius: 10px;
+            background: rgba(71, 147, 255, 0.20);
+
+            margin-left: 20px;
+            padding: 10px 5px;
+        }
+    }
+}
+
