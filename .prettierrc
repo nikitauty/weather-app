@@ -8,5 +8,6 @@
 	"singleAttributePerLine": false,
 	"arrowParens": "always",
 	"singleQuote": true,
-	"jsxSingleQuote": false
+	"jsxSingleQuote": false,
+	"organizeImportsSkipDestructiveCodeActions": true
 }
