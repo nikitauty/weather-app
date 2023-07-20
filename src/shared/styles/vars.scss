@@ -1,0 +1,11 @@
+$blue-color: #4793ff;
+$gray-color: #939cb0;
+
+@mixin ui-font($size, $width) {
+	font-family: Montserrat, sans-serif;
+	font-size: $size;
+	font-style: normal;
+	font-weight: $width;
+	line-height: normal;
+	letter-spacing: 2px;
+}

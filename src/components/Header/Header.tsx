@@ -1,4 +1,5 @@
 import { ChangeThemeBtn } from '@/features/ChangeThemeBtn/ChangeThemeBtn';
+import { CitySelection } from '@/features/CitySelection/CitySelection';
 import styles from '@/components/Header/Header.module.scss';
 import logo from '@/shared/assets/Header logo.svg';
 
@@ -11,11 +12,7 @@ export const Header = () => {
 			</div>
 			<div className={styles.themeCity}>
 				<ChangeThemeBtn />
-				<select name="city" id={styles.city}>
-					<option value="1">Moscow</option>
-					<option value="2">Saint Petersburg</option>
-					<option value="3">Cherepovets</option>
-				</select>
+				<CitySelection />
 			</div>
 		</header>
 	);

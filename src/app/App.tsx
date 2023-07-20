@@ -1,6 +1,7 @@
 import { Header } from '@/components/Header/Header';
 import { useContext } from 'react';
 import { ColorThemeContext } from '@/services/Contexts/ColorThemeContext/ColorThemeContext';
+import { MainCard } from '@/features/MainCard/MainCard';
 
 export const App = () => {
 	const theme = useContext(ColorThemeContext);
@@ -14,10 +15,7 @@ export const App = () => {
 		>
 			<Header />
 			<div>
-				<main className="main">
-					<h1>Hello</h1>
-					<h3>First deploy</h3>
-				</main>
+				<MainCard />
 			</div>
 			<footer className="footer">this is footer</footer>
 		</div>
