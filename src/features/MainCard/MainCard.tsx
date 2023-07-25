@@ -10,11 +10,11 @@ export const MainCard = () => {
 	return (
 		<div className={styles.card}>
 			<div className={styles.card__info}>
-				<div className={styles.info__main}>
+				<div className={styles.card__info_main}>
 					<h1 className={styles.temp}>20°</h1>
 					<span className={styles.day}>Сегодня</span>
 				</div>
-				<img src={weather} alt="" className={styles.card__img} />
+				<img src={weather} alt="" className={styles.card__info_img} />
 			</div>
 			<div className={styles.card__description}>
 				<span className={styles.time}>

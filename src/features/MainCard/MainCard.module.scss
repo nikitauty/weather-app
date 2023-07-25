@@ -7,10 +7,10 @@
 	border-radius: 20px;
 	box-shadow: 2px 5px 25px -3px rgba(180, 180, 180, 0.25);
 
-	.card__info {
+	&__info {
 		display: flex;
 
-		.info__main {
+		&_main {
 			margin-left: 20px;
 			margin-top: 20px;
 
@@ -27,7 +27,7 @@
 			}
 		}
 
-		.card__img {
+		&_img {
 			width: 120px;
 			height: 120px;
 
@@ -36,7 +36,7 @@
 		}
 	}
 
-	.card__description {
+	&__description {
 		@include ui-font(24px, 300);
 
 		color: $gray-color;

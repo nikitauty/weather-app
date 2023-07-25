@@ -8,10 +8,10 @@
     display: grid;
     grid-template: repeat(4, 30px), repeat(3, 100px);
 
-    .card__info{
+    &info{
         display: flex;
 
-        .image{
+        &_img{
             width: 20px;
             height: 20px;
         }

@@ -8,7 +8,7 @@ export const SecondCard = () => {
 	return (
 		<div className={styles.card}>
 			<div className={styles.card__info}>
-                <img src={temp} alt="" className={styles.image}/>
+                <img src={temp} alt="" className={styles.card__info_img}/>
                 <span>Температура</span>
                 <span></span>
             </div>

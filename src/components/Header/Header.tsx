@@ -6,11 +6,11 @@ import logo from '@/shared/assets/Header logo.svg';
 export const Header = () => {
 	return (
 		<header className={styles.header}>
-			<div className={styles.logo}>
+			<div className={styles.header__logo}>
 				<img src={logo} alt="logo" className="header__logo" />
-				<span className={styles.logo__text}>react weather</span>
+				<span className={styles.header__logo_text}>react weather</span>
 			</div>
-			<div className={styles.themeCity}>
+			<div className={styles.header__themeCity}>
 				<ChangeThemeBtn />
 				<CitySelection />
 			</div>
