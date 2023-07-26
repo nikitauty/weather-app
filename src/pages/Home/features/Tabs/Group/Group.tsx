@@ -1,6 +1,6 @@
+import styles from '@/pages/Home/features/Tabs/Group/Group.module.scss';
 import { IDay } from '@/shared/types/IDay';
 import { BottomCard } from '@/ui/BottomCard/BottomCard';
-import styles from '@/pages/Home/features/Tabs/Group/Group.module.scss';
 
 export const Group = () => {
 	const days: IDay[] = [
@@ -65,7 +65,7 @@ export const Group = () => {
 	return (
 		<div className={styles.group}>
 			{days.map((day) => {
-				return <BottomCard day={day} key={day.day}/>;
+				return <BottomCard day={day} key={day.day} />;
 			})}
 		</div>
 	);

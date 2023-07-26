@@ -1,50 +1,49 @@
 @import '../../shared/styles/vars.scss';
 
-.card{
-    display: flex;
-    flex-direction: column;
+.card {
+	display: flex;
+	flex-direction: column;
 
-    width: 150px;
-    height: 200px;
+	width: 150px;
+	height: 200px;
 
-    margin-left: 20px;
-    padding: 12px;
+	margin-left: 20px;
+	padding: 12px;
 
-    background-color: rgba(71, 147, 255, 0.20);
+	background-color: rgba(71, 147, 255, 0.2);
 
-    &__day{
-        @include ui-font(18px, 500);
+	&__day {
+		@include ui-font(18px, 500);
+	}
 
-        
-    }
+	&__date {
+		font-size: 14px;
+		color: $primary-gray;
 
-    &__date{
-        font-size: 14px;
-        color: $primary-gray;
+		margin-top: 8px;
+	}
 
-        margin-top: 8px;
-    }
+	&__iconId {
+		width: 48px;
+		height: 48px;
 
-    &__iconId{
-        width: 48px;
-        height: 48px;
+		margin-top: 12px;
+	}
 
-        margin-top: 12px;
-    }
+	&__dayTemp {
+		@include ui-font(18px, 500);
 
-    &__dayTemp{
-        @include ui-font(18px, 500);
+		margin-top: 12px;
+	}
 
-        margin-top: 12px;
-    }
+	&__nightTemp,
+	&__description {
+		font-size: 13px;
 
-    &__nightTemp, &__description{
-        font-size: 13px;
+		color: $primary-gray;
+	}
 
-        color: $primary-gray;
-    }
-
-    &__description{
-        margin-top: 6px;
-    }
+	&__description {
+		margin-top: 6px;
+	}
 }
