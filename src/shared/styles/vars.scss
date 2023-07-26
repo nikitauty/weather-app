@@ -1,8 +1,18 @@
-$blue-color: #4793ff;
-$gray-color: #939cb0;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
+$light-white: #fff;
+$light-blue: rgba(71, 147, 255, 0.20);
+$primary-blue: #4793FF;
+$primary-gray: #939cb0;
+
+$box-shadow: 2px 5px 25px -3px rgba(180, 180, 180, 0.25);
+
+$dark-gray: #4F4F4F;
+$dark-black: #2E3035;
+$dark-bg: #0D1117;
 
 @mixin ui-font($size, $width) {
-	font-family: Montserrat, sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-size: $size;
 	font-style: normal;
 	font-weight: $width;

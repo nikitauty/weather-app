@@ -5,7 +5,7 @@
 	height: 300px;
 
 	border-radius: 20px;
-	box-shadow: 2px 5px 25px -3px rgba(180, 180, 180, 0.25);
+	box-shadow: $box-shadow;
 
 	&__info {
 		display: flex;
@@ -17,7 +17,7 @@
 			.temp {
 				@include ui-font(96px, 500);
 
-				color: $blue-color;
+				color: $primary-blue;
 			}
 
 			.day {
@@ -39,7 +39,7 @@
 	&__description {
 		@include ui-font(24px, 300);
 
-		color: $gray-color;
+		color: $primary-gray;
 
 		margin-left: 20px;
 		margin-top: 40px;
