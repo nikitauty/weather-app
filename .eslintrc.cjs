@@ -25,7 +25,7 @@ module.exports = {
 		'@typescript-eslint/no-non-null-assertion': 'off',
 		'no-console': 'warn',
 		quotes: ['error', 'single'],
-		'jsx-quotes': ['error', 'prefer-double'],
+		'jsx-quotes': ['error', 'prefer-single'],
 		'react-refresh/only-export-components': 'warn',
 		'@typescript-eslint/no-unused-vars': ['warn'],
 		'react-hooks/rules-of-hooks': 'error',

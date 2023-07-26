@@ -1,0 +1,39 @@
+@import '../../../../shared/styles/vars.scss';
+
+.card {
+	width: 750px;
+	height: 300px;
+
+	border-radius: 20px;
+	box-shadow: 2px 5px 25px -3px rgba(180, 180, 180, 0.25);
+
+	&__info {
+		display: grid;
+		grid-template: 50px / 50px 140px 300px;
+		gap: 20px;
+		align-items: center;
+
+		@include ui-font(16px, 300);
+		text-align: left;
+
+		margin-top: 20px;
+
+		&_img {
+			position: relative;
+
+			.im {
+				position: absolute;
+				top: 12px;
+				left: 15px;
+				width: 25px;
+				height: 25px;
+			}
+
+			filter: drop-shadow(1px 4px 10px rgba(71, 147, 255, 0.2));
+		}
+
+		&_header {
+			color: #939cb0;
+		}
+	}
+}

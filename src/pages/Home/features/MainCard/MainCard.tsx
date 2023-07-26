@@ -1,4 +1,4 @@
-import styles from '@/features/MainCard/MainCard.module.scss';
+import styles from '@/pages/Home/features/MainCard/MainCard.module.scss';
 import { CityContext } from '@/services/Contexts/CityContext/CityContextProvider';
 import weather from '@/shared/assets/sun.svg';
 import { useContext } from 'react';
@@ -14,7 +14,7 @@ export const MainCard = () => {
 					<h1 className={styles.temp}>20°</h1>
 					<span className={styles.day}>Сегодня</span>
 				</div>
-				<img src={weather} alt="" className={styles.card__info_img} />
+				<img src={weather} alt='' className={styles.card__info_img} />
 			</div>
 			<div className={styles.card__description}>
 				<span className={styles.time}>

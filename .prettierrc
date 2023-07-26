@@ -8,6 +8,9 @@
 	"singleAttributePerLine": false,
 	"arrowParens": "always",
 	"singleQuote": true,
-	"jsxSingleQuote": false,
-	"organizeImportsSkipDestructiveCodeActions": true
+	"jsxSingleQuote": true,
+	"importOrder": ["^@core/(.*)$", "^@server/(.*)$", "^@ui/(.*)$", "^[./]"],
+	"importOrderSeparation": true,
+	"importOrderSortSpecifiers": true,
+	"plugins": ["@trivago/prettier-plugin-sort-imports"]
 }
