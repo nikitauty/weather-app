@@ -1,7 +1,7 @@
 import mainly_cloudy from '@/shared/assets/mainly_cloudy.svg';
 import rain from '@/shared/assets/rain.svg';
-import small_rain from '@/shared/assets/small_rain.svg';
 import small_rain_sun from '@/shared/assets/small_rain_sun.svg';
+import small_rain from '@/shared/assets/small_rain.svg';
 import sun from '@/shared/assets/sun.svg';
 import { IDay } from '@/shared/types/IDay';
 import styles from '@/ui/BottomCard/BottomCard.module.scss';

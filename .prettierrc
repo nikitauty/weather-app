@@ -9,8 +9,8 @@
 	"arrowParens": "always",
 	"singleQuote": true,
 	"jsxSingleQuote": true,
-	"importOrder": ["^@core/(.*)$", "^@server/(.*)$", "^@ui/(.*)$", "^[./]"],
-	"importOrderSeparation": true,
-	"importOrderSortSpecifiers": true,
-	"plugins": ["@trivago/prettier-plugin-sort-imports"]
+	"importOrder": ["^@core/(.*)$", "", "^@server/(.*)$", "", "^@ui/(.*)$", "", "^[./]"],
+    "importOrderParserPlugins": ["typescript", "jsx", "decorators-legacy"],
+    "importOrderTypeScriptVersion": "5.0.0",
+	"plugins": ["@ianvs/prettier-plugin-sort-imports"]
 }

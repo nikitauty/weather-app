@@ -1,4 +1,4 @@
-import { FunctionComponent, createContext, useState } from 'react';
+import { createContext, FunctionComponent, useState } from 'react';
 
 interface Props {
 	children: React.ReactNode;
