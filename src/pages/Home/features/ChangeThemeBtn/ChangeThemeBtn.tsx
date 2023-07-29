@@ -1,25 +1,18 @@
+import { useTheme } from '@/hooks/useTheme';
 import styles from '@/pages/Home/features/ChangeThemeBtn/ChangeThemeBtn.module.scss';
-import {
-	ColorThemeContext,
-	IThemeContext,
-} from '@/services/Contexts/ColorThemeContext/ColorThemeContext';
-import { themes } from '@/services/Contexts/ColorThemeContext/themes';
 import lightTheme from '@/shared/assets/invert_colors.svg';
-import { useCallback, useContext } from 'react';
+import { Theme } from '@/shared/types/enumTheme';
 
 export const ChangeThemeBtn = () => {
-	const theme = useContext<IThemeContext | null>(ColorThemeContext);
-
+	const theme = useTheme();
 	return (
 		<button
 			className={styles.theme}
-			onClick={useCallback(() => {
-				if (theme?.theme?.color === '#000') {
-					theme.setTheme(themes.dark);
-				} else {
-					theme?.setTheme(themes.light);
-				}
-			}, [theme])}
+			onClick={() => {
+				theme.changeTheme(
+					theme.theme === Theme.LIGHT ? Theme.DARK : Theme.LIGHT,
+				);
+			}}
 		>
 			<img src={lightTheme} alt='theme' />
 		</button>

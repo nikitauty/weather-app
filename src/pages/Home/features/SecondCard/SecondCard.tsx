@@ -22,7 +22,9 @@ export const SecondCard = () => {
 					<img src={presure} alt='' className={styles.im} />
 				</div>
 				<span className={styles.card__info_header}>Давление</span>
-				<span className={styles.card__info_span}>765 мм ртутного столба - нормальное</span>
+				<span className={styles.card__info_span}>
+					765 мм ртутного столба - нормальное
+				</span>
 			</div>
 			<div className={styles.card__info}>
 				<div className={styles.card__info_img}>
@@ -38,7 +40,9 @@ export const SecondCard = () => {
 					<img src={wind} alt='' className={styles.im} />
 				</div>
 				<span className={styles.card__info_header}>Ветер</span>
-				<span className={styles.card__info_span}>3 м/с юго-запад - легкий ветер</span>
+				<span className={styles.card__info_span}>
+					3 м/с юго-запад - легкий ветер
+				</span>
 			</div>
 		</div>
 	);

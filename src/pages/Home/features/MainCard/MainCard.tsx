@@ -19,7 +19,9 @@ export const MainCard = () => {
 			<div className={styles.card__description}>
 				<span className={styles.time}>
 					Время: {date.getHours()}:
-					{date.getMinutes() > 10 ? date.getMinutes() : '0' + date.getMinutes().toString()}
+					{date.getMinutes() > 10
+						? date.getMinutes()
+						: '0' + date.getMinutes().toString()}
 				</span>
 				<br />
 				<span className={styles.city}>Город: {city?.city}</span>

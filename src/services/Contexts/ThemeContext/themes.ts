@@ -1,4 +1,4 @@
-import { ITheme } from './ColorThemeContext';
+import { ITheme } from './ThemeContext';
 
 export const themes: ITheme = {
 	light: {

@@ -7,6 +7,8 @@
 	border-radius: 20px;
 	box-shadow: $box-shadow;
 
+	background: var(#{--component-background-default});
+
 	&__info {
 		display: flex;
 
@@ -23,7 +25,7 @@
 			.day {
 				@include ui-font(40px, 300);
 
-				color: #000;
+				color: var(#{--text-color-default});
 			}
 		}
 

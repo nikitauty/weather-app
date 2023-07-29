@@ -9,13 +9,47 @@ $box-shadow: 2px 5px 25px -3px rgba(180, 180, 180, 0.25);
 
 $dark-gray: #4f4f4f;
 $dark-black: #2e3035;
-$dark-bg: #0d1117;
+$dark: #000;
 
-@mixin ui-font($size, $width) {
+$body-background-dark: #0d1117;
+$body-background-light: #fff;
+
+$component-background-dark: #4f4f4f;
+$component-background-light: #fff;
+
+$card-background-dark: #2e3035;
+$card-background-light: rgba(71, 147, 255, 0.2);
+
+$card-shadow-dark: 0px 3px 20px rgba(147, 144, 144, 0.28);
+$card-shadow-light: 0px 3px 20px rgba(5, 5, 5, 0.28);
+
+@mixin ui-font($size, $width: 400) {
 	font-family: 'Montserrat', sans-serif;
 	font-size: $size;
 	font-style: normal;
 	font-weight: $width;
 	line-height: normal;
 	letter-spacing: 1px;
+}
+
+:root {
+	--body-background-dark: #{$body-background-dark};
+	--body-background-light: #{$body-background-light};
+	--body-background-default: var(#{--body-background-dark});
+
+	--component-background-dark: #{$component-background-dark};
+	--component-background-light: #{$component-background-light};
+	--component-background-default: var(#{--component-background-dark});
+
+	--card-background-dark: #{$card-background-dark};
+	--card-background-light: #{$card-background-light};
+	--card-background-default: var(#{--card-background-dark});
+
+	--card-shadow-dark: #{$card-shadow-dark};
+	--card-shadow-light: #{$card-shadow-light};
+	--card-shadow-default: var(#{--card-shadow-dark});
+
+	--text-color-dark: #{$light-white};
+	--text-color-light: #{$dark};
+	--text-color-default: var(#{--text-color-dark});
 }

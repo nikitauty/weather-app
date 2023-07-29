@@ -1,0 +1,30 @@
+@import '../../../../shared/styles/vars.scss';
+
+.tabs {
+	display: flex;
+
+	margin-top: 50px;
+
+	.tab {
+		width: 144px;
+		height: 35px;
+
+		background: var(#{--component-background-default});
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		@include ui-font(18px);
+		color: var(#{--text-color-default});
+
+		border-radius: 5px;
+		box-shadow: $box-shadow;
+
+		margin-right: 15px;
+	}
+
+	.active {
+		background-color: $primary-blue;
+	}
+}

@@ -6,6 +6,8 @@
 	border-radius: 0px 0px 20px 20px;
 	box-shadow: $box-shadow;
 
+	background: var(#{--component-background-default});
+
 	margin-top: 8px;
 	padding: 20px;
 }

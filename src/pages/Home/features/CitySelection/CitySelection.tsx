@@ -1,29 +1,10 @@
 /* eslint-disable @typescript-eslint/no-unsafe-return */
-import { ColorThemeContext } from '@/services/Contexts/ColorThemeContext/ColorThemeContext';
-import { useContext } from 'react';
+import { useTheme } from '@/hooks/useTheme';
+import { Theme } from '@/shared/types/enumTheme';
 import Select from 'react-select';
 
 export const CitySelection = () => {
-	const theme = useContext(ColorThemeContext);
-
-	const colourStyles = {
-		control: (styles: any) => ({
-			...styles,
-			backgroundColor: theme?.theme?.citySelectBg,
-			color: theme?.theme?.color,
-			width: '194px',
-			height: '37px',
-			border: 'none',
-			borderRadius: '10px',
-			marginLeft: '20px',
-			zIndex: '1',
-		}),
-		option: (styles: any) => ({
-			...styles,
-			backgroundColor: theme?.theme?.citySelectBg,
-			color: theme?.theme?.color,
-		}),
-	};
+	const theme = useTheme();
 
 	const options = [
 		{ value: 'Msc', label: 'Moscow' },
@@ -31,5 +12,25 @@ export const CitySelection = () => {
 		{ value: 'Kaz', label: 'Kazan' },
 	];
 
-	return <Select defaultValue={options[0]} options={options} styles={colourStyles} />;
+	const colourStyles = {
+		control: (styles: any) => ({
+			...styles,
+			backgroundColor:
+				theme.theme === Theme.LIGHT ? 'rgba(71, 147, 255, 0.2)' : '#4f4f4f',
+			width: '194px',
+			height: '37px',
+			border: 'none',
+			borderRadius: '10px',
+			marginLeft: '20px',
+			zIndex: '1',
+		}),
+		singleValue: (styles: any) => ({
+			...styles,
+			color: theme.theme === Theme.LIGHT ? '#000' : '#fff',
+		}),
+	};
+
+	return (
+		<Select defaultValue={options[0]} options={options} styles={colourStyles} />
+	);
 };
