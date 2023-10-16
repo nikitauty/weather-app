@@ -4,7 +4,7 @@ interface Props {
 	children: React.ReactNode;
 }
 
-interface ICityProvider {
+export interface ICityProvider {
 	city: string;
 	setCity: React.Dispatch<React.SetStateAction<string>>;
 }
@@ -12,7 +12,7 @@ interface ICityProvider {
 export const CityContext = createContext<ICityProvider | null>(null);
 
 export const CityContextProvider: FunctionComponent<Props> = ({ children }) => {
-	const [city, setCity] = useState('Sain Petersburg');
+	const [city, setCity] = useState('Saint Petersburg');
 
 	return (
 		<CityContext.Provider value={{ city, setCity }}>

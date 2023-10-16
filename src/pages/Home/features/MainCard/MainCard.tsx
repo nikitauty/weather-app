@@ -1,11 +1,10 @@
+import { useCity } from '@/hooks/useCity';
 import styles from '@/pages/Home/features/MainCard/MainCard.module.scss';
-import { CityContext } from '@/services/Contexts/CityContext/CityContextProvider';
 import weather from '@/shared/assets/sun.svg';
-import { useContext } from 'react';
 
 export const MainCard = () => {
 	const date = new Date();
-	const city = useContext(CityContext);
+	const city = useCity();
 
 	return (
 		<div className={styles.card}>
@@ -19,11 +18,9 @@ export const MainCard = () => {
 			<div className={styles.card__description}>
 				<span className={styles.time}>
 					Время: {date.getHours()}:
-					{
-						date.getMinutes() > 10
+					{date.getMinutes() > 10
 						? date.getMinutes()
-						: '0' + date.getMinutes().toString()
-					}
+						: '0' + date.getMinutes().toString()}
 				</span>
 				<br />
 				<span className={styles.city}>Город: {city?.city}</span>
